@@ -40,6 +40,6 @@ class Api::V1::DestinationsController < ApplicationController
   private
 
   def destination_params
-      params.require(:destination).permit(:name, :date_visited, :address, :category, :comment, :visited, :cost, :attendees, :user_id, :latitude, :longitude)
+      params.require(:destination).permit(:name, :date_visited, :address, :category, :comment, :visited, :cost, :attendees, :user_id, :latitude, :longitude, :image)
   end
 end
